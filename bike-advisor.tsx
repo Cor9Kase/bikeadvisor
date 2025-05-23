@@ -570,7 +570,7 @@ const EBikeAdvisor = () => {
   };
   
   return (
-    <div className="min-h-screen bg-white py-8">
+    <div className="h-full w-full bg-white py-8 flex flex-col">
       <header className="max-w-6xl mx-auto mb-8 px-4">
         <h1 className="text-3xl font-bold">EVO Sykkelrådgivning</h1>
         <p className="text-gray-600 mt-2">
@@ -578,7 +578,7 @@ const EBikeAdvisor = () => {
         </p>
       </header>
       
-      <div className="max-w-6xl mx-auto px-4">
+      <div className="max-w-6xl mx-auto px-4 flex-grow overflow-y-auto">
         {!showRecommendations ? (
           <>
             {renderSentence()}
